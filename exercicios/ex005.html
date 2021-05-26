@@ -4,38 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Operadore em JavaScript</title>
+    <title>Primeiros Passos com DOM</title>
     <style>
-    /*comentario em css*/
-        body {            
-            font: normal 20pt arial;
-            text-align: center;
+        body{
+            background: rgb(68, 125, 199);
+            color: white;
+            font: normal 18pt arial;
         }
-        
     </style>
 </head>
 <body>
-    <!--comentario em html-->
-    <h1>Operadores 1 parte</h1>
-   <hr>
-    <script>  
-        var n1 = Number(window.prompt('Digite um numero: '))
-        var n2 = Number(window.prompt('Digite outro numero: ')) 
-        var r1 = n1 + n2          
-        var r2 = n1 - n2
-        var r3 = n1 * n2
-        var r4 = n1 / n2
-        var r5 = n1 % n2
-        var r6 = n1 ** n2
-        var r = n1
-        r+=20
-        r-=1
-        r*=1
-        r/=2
-        r%=1
-        r**=1
-        document.write(`${r1}<br/>${r2}<br/>${r3}<br/>${r4}<br/>${r5}<br/>${r6}<br/>${r}`)
-        
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>aprendendo a usar o <strong>DOM</strong> em Java Script.</p>    
+    <div>Clique em mim</div>
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[0]
+        var p2 = window.document.getElementsByTagName('p')[1]
+        window.document.write('Está escrito assim: ' +p1.innerText)           
+        window.document.write(' Está escrito assim: ' +p2.innerHTML)
     </script>
 </body>
 </html>
