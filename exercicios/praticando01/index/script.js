@@ -3,7 +3,7 @@ function carregar() {
     var img = window.document.getElementById('imagem')   
     var data = new Date()
     var hora = data.getHours()
-    //var hora = 0 //alterar para teste
+    //var hora = 12 //alterar para teste
     msg.innerHTML = `Agora são ${hora} horas.`
     if (hora >= 0 && hora < 12) {
         //bom dia
@@ -14,7 +14,7 @@ function carregar() {
         img.src = 'tarde-redonda.jpg'    
         document.body.style.background = '#196fac'
     }else if (hora >= 18 && hora < 21) {
-        //boa entardecer
+        //bom entardecer
         img.src = 'entardecer-redonda.jpg'    
         document.body.style.background = '#714224' 
     }else {
